@@ -18,7 +18,7 @@
 
 <script src="../js/react.js"></script>
 <script src="../js/react-dom.js"></script>
-<script src="https://cdn.bootcss.com/prop-types/15.6.0/prop-types.js"></script>
+<!--<script src="https://cdn.bootcss.com/prop-types/15.6.0/prop-types.js"></script>-->
 <script src="../js/babel.min.js"></script>
 
 <script type="text/babel">
@@ -73,9 +73,9 @@
 
   // 设置props属性额必要性和传入的数据类型
   Person.propTypes = {
-    username: PropTypes.string.isRequired,
-    age: PropTypes.number.isRequired,
-    sex: PropTypes.string.isRequired
+    username: React.PropTypes.string.isRequired,
+    age: React.PropTypes.number.isRequired,
+    sex: React.PropTypes.string.isRequired
   };
 
   let person = {username: 'kobe', age: 39, sex: '男'};
