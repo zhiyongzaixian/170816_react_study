@@ -18,6 +18,7 @@
 
 <script src="../js/react.js"></script>
 <script src="../js/react-dom.js"></script>
+<script src="https://cdn.bootcss.com/prop-types/15.6.0/prop-types.js"></script>
 <script src="../js/babel.min.js"></script>
 
 <script type="text/babel">
@@ -52,6 +53,38 @@
     1). 如果性别没有指定, 默认为男
     2). 如果年龄没有指定, 默认为18
   */
+  class Person extends React.Component {
+
+    render(){
+      console.log(this.props);
+      return (
+          <ul>
+            <li>姓名：{this.props.username}</li>
+            <li>性别：{this.props.sex}</li>
+            <li>年龄：{this.props.age}</li>
+          </ul>
+      )
+    }
+  }
+  // 设置组件的默认props属性值
+  Person.defaultProps = {
+    sex: '女'
+  };
+
+  // 设置props属性额必要性和传入的数据类型
+  Person.propTypes = {
+    username: PropTypes.string.isRequired,
+    age: PropTypes.number.isRequired,
+    sex: PropTypes.string.isRequired
+  };
+
+  let person = {username: 'kobe', age: 39, sex: '男'};
+  let person2 = {username: 'wade', age: 36, sex: '男'};
+  // 渲染组件
+  // ReactDOM.render(<Person username={person.username} age={person.age} sex={person.sex}/>, document.getElementById('example'))
+
+  ReactDOM.render(<Person username={person.username} age={person.age}/>, document.getElementById('example'))
+  ReactDOM.render(<Person username={person2.username} age={person2.age}/>, document.getElementById('example2'))
 
 </script>
 </body>
