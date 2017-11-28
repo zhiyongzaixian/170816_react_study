@@ -7,7 +7,7 @@
 <body>
 
 <div id="example1"></div>
-<div id="example2"></div>
+<div id="example2">sdfsdfdsfdsfsffffffffffffffff</div>
 <div id="example3"></div>
 
 <script src="../js/react.js"></script>
@@ -45,6 +45,31 @@
   2). 得到包含的虚拟DOM并解析为真实DOM
   3). 插入到指定的页面元素内部
 */
+
+
+  // 创建组件
+  // 工厂(无状态)函数(最简洁, 推荐使用)
+  function MyComponent1() {
+    return <h2>工厂(无状态)函数(最简洁, 推荐使用)</h2>
+  }
+  // ES6 class定义组件
+  class MyComponent2 extends React.Component {
+    render(){
+      console.log(this);
+      return <h3>ES6 class定义组件</h3>
+    }
+  }
+  //方式3: ES5老语法(不推荐使用了)
+  var MyComponent3 = React.createClass({
+    render :function() {
+      return <h1>自定义组件标题22222</h1>
+    }
+  })
+  // 渲染组件
+  ReactDOM.render(<MyComponent1 />, document.getElementById('example1'));
+  ReactDOM.render(<MyComponent2 />, document.getElementById('example2'));
+  ReactDOM.render(<MyComponent3 />, document.getElementById('example3'));
+
 </script>
 </body>
 </html>
