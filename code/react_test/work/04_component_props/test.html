@@ -84,7 +84,7 @@
   // ReactDOM.render(<Person username={person.username} age={person.age} sex={person.sex}/>, document.getElementById('example'))
 
   ReactDOM.render(<Person username={person.username} age={person.age}/>, document.getElementById('example'))
-  ReactDOM.render(<Person username={person2.username} age={person2.age}/>, document.getElementById('example2'))
+  ReactDOM.render(<Person {...person2}/>, document.getElementById('example2'))
 
 </script>
 </body>

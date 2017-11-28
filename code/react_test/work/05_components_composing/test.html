@@ -28,6 +28,29 @@
      * App: props.names    array
    */
 
+  class App extends React.Component{
+    render(){
+      let {arr} = this.props;
+      return (
+          <div>
+            {
+              arr.map((item, index) => {
+                return <Welcome name={item} key={index}/>
+              })
+            }
+          </div>
+      )
+    }
+  }
+  // 定义Welcome组件
+  function Welcome(props) {
+   // console.log(this); // undefined
+    console.log(props);
+    return <h2>Welcome {props.name}</h2>
+  }
+  let arr = ['kobe', 'wade', 'anverson', 'duncan'];
+  // 渲染组件
+  ReactDOM.render(<App arr={arr}/>, document.getElementById('example'));
 </script>
 </body>
 </html>
