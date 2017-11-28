@@ -36,9 +36,11 @@
       <file leaf-file-name="test.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/work/03_component_basic/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-507">
-              <caret line="27" column="9" selection-start-line="24" selection-start-column="4" selection-end-line="27" selection-end-column="9" />
-              <folding />
+            <state relative-caret-position="465">
+              <caret line="73" column="30" selection-start-line="73" selection-start-column="30" selection-end-line="73" selection-end-column="30" />
+              <folding>
+                <element signature="n#script#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -215,15 +217,15 @@
       <workItem from="1499263758747" duration="4019000" />
       <workItem from="1499308662985" duration="15694000" />
       <workItem from="1499342314875" duration="238000" />
-      <workItem from="1511833547665" duration="5138000" />
+      <workItem from="1511833547665" duration="6461000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26667000" />
+    <option name="totallyTimeSpent" value="27990000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1370" height="744" extended-state="1" />
+    <frame x="-8" y="0" width="1370" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21621622" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -541,9 +543,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/work/03_component_basic/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-507">
-          <caret line="27" column="9" selection-start-line="24" selection-start-column="4" selection-end-line="27" selection-end-column="9" />
-          <folding />
+        <state relative-caret-position="465">
+          <caret line="73" column="30" selection-start-line="73" selection-start-column="30" selection-end-line="73" selection-end-column="30" />
+          <folding>
+            <element signature="n#script#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

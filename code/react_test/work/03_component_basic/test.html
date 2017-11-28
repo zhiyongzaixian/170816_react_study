@@ -71,5 +71,35 @@
   ReactDOM.render(<MyComponent3 />, document.getElementById('example3'));
 
 </script>
+<script type="text/javascript">
+//    function Person(name,age) {
+//
+//    }
+//    let person = new Person('kobe', 39);
+//    console.log(person);
+
+    class Person {
+      constructor(name, age){
+        this.name = name;
+        this.age = age;
+      }
+    }
+
+    class HaHa extends Person {
+      constructor(name, age, xxx){
+        super();
+        this.name = name;
+        this.age = age;
+        this.xxx = xxx;
+      }
+      showName(){
+        console.log(this.name);
+      }
+    }
+    
+    let haha = new HaHa('wade', 36, 5000000)
+  console.log(haha);
+  haha.showName();
+</script>
 </body>
 </html>
