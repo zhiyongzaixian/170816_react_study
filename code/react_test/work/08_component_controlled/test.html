@@ -29,6 +29,32 @@
     3. 输入数据时, 下面的数据同步变化
   */
 
+  class TowWay extends React.Component{
+    constructor(props){
+      super(props);
+      this.state = {
+        msg: 'atguigu.com'
+      }
+      this.handleChange = this.handleChange.bind(this);
+    }
+    handleChange(event){
+      this.setState({
+        msg:  event.target.value
+      });
+    }
+    render(){
+      let {msg} = this.state;
+      return(
+          <div>
+            <input onChange={this.handleChange} type="text" value={msg}/>
+            <p>{msg}</p>
+          </div>
+      )
+    }
+  }
+  ReactDOM.render(<TowWay />, document.getElementById('example'));
+
+
 </script>
 </body>
 </html>
