@@ -41,6 +41,78 @@
     * 可以在componentWillUnmount()做一些收尾工作: 停止监听
     * 生命周期还有一个方法(后面需要时讲): componentWillReceiveProps
   */
+  
+  class LifeCycle extends React.Component {
+    constructor(props){
+      super(props);
+      this.state = {
+        person: {
+          name: 'kobe',
+          age: 39
+        }
+      }
+      console.log('constructor()');
+    }
+    // 组件将要被挂载
+    componentWillMount(){
+      // console.log(this); // this == 实例对象
+      console.log('componentWillMount() 组件将要被挂载');
+      // 发送ajax请求，开启定时器
+      setTimeout(function () {
+        this.setState({
+          person: {
+            name: 'wade',
+            age: 36
+          }
+        });
+      }.bind(this),  2000)
+
+      setTimeout(() => {
+        this.setState({
+          person: {
+            name: 'duncan',
+            age: 42
+          }
+        });
+      }, 3000)
+    }
+    // 组件挂载完毕
+    componentDidMount(){
+      console.log('componentDidMount() 组件挂载完毕');
+      // 发送ajax请求，开启定时器
+      setTimeout(() => {
+        ReactDOM.unmountComponentAtNode(document.getElementById('example'))
+      }, 4000)
+
+      this.intervalId = setInterval(function () {
+        console.log('setInterval()');
+      }, 1000)
+    }
+    // 组件将要更新
+    
+    componentWillUpdate(){
+      console.log('componentWillUpdate() 组件将要更新');
+    }
+    // 组件更新完毕
+    componentDidUpdate(){
+      console.log('componentDidUpdate() 组件更新完毕');
+    }
+    // 组件将要被卸载
+    componentWillUnmount(){
+      console.log('componentWillUnmount() 组件将要被卸载');
+      // 通常去做一些收尾工作，关掉定时器
+      clearInterval(this.intervalId);
+    }
+    render(){
+      console.log('render()');
+      let {person} = this.state;
+      return (
+          <div>{person.name}-----{person.age}</div>
+      )
+    }
+  }
+  
+  ReactDOM.render(<LifeCycle />, document.getElementById('example'));
 </script>
 </body>
 </html>
