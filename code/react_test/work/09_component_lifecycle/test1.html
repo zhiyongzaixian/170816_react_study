@@ -59,6 +59,7 @@
       console.log('componentWillMount() 组件将要被挂载');
       // 发送ajax请求，开启定时器
       setTimeout(function () {
+        console.log(this);
         this.setState({
           person: {
             name: 'wade',
