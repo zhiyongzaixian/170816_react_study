@@ -38,6 +38,35 @@
     1. 显示h2标题, 初始文本为: 你喜欢我
     2. 点击标题更新为: 我喜欢你
   */
+
+  class IsLike extends React.Component {
+    constructor(props){
+      super(props);
+      // 初始化状态
+      this.state = {
+        isLike: false
+      };
+      // 改变changeLike的this指向
+      this.changeLike = this.changeLike.bind(this);
+    }
+    changeLike(){
+      // 修改状态
+      this.setState({
+        isLike: !this.state.isLike
+      });
+    }
+    render(){
+      let {isLike} = this.state;
+      let msg = isLike?'我喜欢贾静雯':'贾静雯喜欢我';
+      return (
+          <h1 onClick={this.changeLike}>
+            {msg}
+          </h1>
+      )
+    }
+  }
+
+  ReactDOM.render(<IsLike/>, document.getElementById('example'));
 </script>
 </body>
 </html>
