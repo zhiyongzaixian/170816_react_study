@@ -19,6 +19,13 @@ class App extends Component {
     comments.unshift(comment);
     this.setState({comments});
   };
+  // 定义删除comment的方法
+  del = (index) => {
+    let {comments} = this.state;
+    comments.splice(index, 1);
+    // 更新状态
+    this.setState({comments});
+  };
   render(){
     let {comments} = this.state;
     return (
@@ -34,7 +41,7 @@ class App extends Component {
         </header>
         <div className="container">
           <Add add={this.add}/>
-          <List comments={comments}/>
+          <List comments={comments} del={this.del}/>
         </div>
       </div>
     )

@@ -26,21 +26,21 @@
       <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/work/hello-comments/src/components/App/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="501">
-              <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+            <state relative-caret-position="312">
+              <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
-                <element signature="e#556#825#0" expanded="false" />
+                <element signature="e#709#978#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Add.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Add.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/work/hello-comments/src/components/Add/Add.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="216">
+              <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -49,18 +49,18 @@
       <file leaf-file-name="Item.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/work/hello-comments/src/components/Item/Item.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+            <state relative-caret-position="243">
+              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="List.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="List.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/work/hello-comments/src/components/List/List.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="13" column="46" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="46" />
+            <state relative-caret-position="270">
+              <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -99,10 +99,10 @@
         <option value="$PROJECT_DIR$/teset/package.json" />
         <option value="$PROJECT_DIR$/work/hello-comments/public/index.html" />
         <option value="$PROJECT_DIR$/work/hello-comments/src/index.js" />
-        <option value="$PROJECT_DIR$/work/hello-comments/src/components/List/List.js" />
-        <option value="$PROJECT_DIR$/work/hello-comments/src/components/Item/Item.js" />
-        <option value="$PROJECT_DIR$/work/hello-comments/src/components/App/App.js" />
         <option value="$PROJECT_DIR$/work/hello-comments/src/components/Add/Add.js" />
+        <option value="$PROJECT_DIR$/work/hello-comments/src/components/App/App.js" />
+        <option value="$PROJECT_DIR$/work/hello-comments/src/components/Item/Item.js" />
+        <option value="$PROJECT_DIR$/work/hello-comments/src/components/List/List.js" />
       </list>
     </option>
   </component>
@@ -258,12 +258,12 @@
       <workItem from="1511942675984" duration="4569000" />
       <workItem from="1512026685024" duration="37000" />
       <workItem from="1512050616972" duration="11000" />
-      <workItem from="1512087835087" duration="4957000" />
+      <workItem from="1512087835087" duration="7364000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16052000" />
+    <option name="totallyTimeSpent" value="18459000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1370" height="744" extended-state="0" />
@@ -593,40 +593,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/work/hello-comments/src/components/List/List.js">
+    <entry file="file://$PROJECT_DIR$/work/hello-comments/src/components/Add/Add.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="46" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/hello-comments/src/components/Item/Item.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+        <state relative-caret-position="216">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/work/hello-comments/src/components/App/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+        <state relative-caret-position="312">
+          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#556#825#0" expanded="false" />
+            <element signature="e#709#978#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/work/hello-comments/src/components/Add/Add.js">
+    <entry file="file://$PROJECT_DIR$/work/hello-comments/src/components/Item/Item.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="243">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/hello-comments/src/components/List/List.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
