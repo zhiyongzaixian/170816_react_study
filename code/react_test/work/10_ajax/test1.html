@@ -11,6 +11,7 @@
 <script src="../js/react-dom.js"></script>
 <script src="../js/babel.min.js"></script>
 <script src="https://cdn.bootcss.com/axios/0.17.1/axios.js"></script>
+<script src="https://cdn.bootcss.com/fetch/2.0.3/fetch.js"></script>
 <script type="text/babel">
 
 /*
@@ -35,18 +36,33 @@
     componentDidMount(){
       // 发送ajax请求
       let url = 'https://api.github.com/users/octocat/gists'
-      axios.get(url)
-          .then(response => {
-            console.log(response);
-            let data = response.data;
+//      axios.get(url)
+//          .then(response => {
+//            console.log(response);
+//            let data = response.data;
+//            // 更新状态
+//            this.setState({
+//              gistUrl: data[0].html_url
+//            })
+//          })
+//          .catch(error => {
+//            console.log(error);
+//          })
+
+      fetch(url)
+          .then((response) => {
+            return response.json();
+          })
+          .then((data) => {
+            console.log('成功的数据', data);
             // 更新状态
             this.setState({
               gistUrl: data[0].html_url
             })
           })
-          .catch(error => {
-            console.log(error);
-          })
+          .catch((e) => {
+            console.log("Oops, error");
+          });
     }
     render(){
       let {gistUrl} = this.state;
