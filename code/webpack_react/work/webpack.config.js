@@ -26,9 +26,8 @@ module.exports = {
 
     ]
   },
-  devServer: {
-    contentBase: 'dist/',
-    hot: true
+  devServer:{
+    contentBase: './dist/',//内置服务器动态加载页面所在的目录
   }
 
 };

@@ -48,7 +48,7 @@
 	  };
 	  
 	  ```
-##3. babel配置文件: .babelrc
+##3. babel配置文件: .babelrc   // run control
 	  ```
 	  {
 	    "presets": ["es2015", "react"]
