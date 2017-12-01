@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import PubSub from 'pubsub-js';
 import Add from '../Add/Add';
 import List from '../List/List';
 
@@ -12,6 +13,16 @@ class App extends Component {
         {username: '雄县人', comment: '我在雄安有两亩地'}
       ]
     };
+  }
+  // 组件将要被渲染的是订阅
+  componentWillMount(){
+    PubSub.subscribe('message',  (msg, data) => {
+      console.log(msg, data);
+      let {comments} = this.state;
+      comments.splice(data, 1);
+      // 更新状态
+      this.setState({comments});
+    })
   }
   // 定义添加comment的函数
   add = (comment) => {

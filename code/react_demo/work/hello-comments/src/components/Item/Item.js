@@ -1,11 +1,14 @@
 import React, {Component} from 'react';
+import PubSub from 'pubsub-js';
 
 class Item extends Component {
   // 定义删除的方法
   delComment = () => {
     // console.log(this.props.index);
     if(window.confirm(`你确定删除 ${this.props.comment.username} 吗？`)){
-      this.props.del(this.props.index);
+      // this.props.del(this.props.index);
+      // 发布消息
+      PubSub.publish('message', this.props.index)
     }
   };
   render(){
