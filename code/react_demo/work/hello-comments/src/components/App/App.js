@@ -3,7 +3,24 @@ import Add from '../Add/Add';
 import List from '../List/List';
 
 class App extends Component {
+  constructor(props){
+    super(props);
+    // 初始化状态
+    this.state = {
+      comments: [
+        {username: '山西人', comment: '我们有煤矿'},
+        {username: '雄县人', comment: '我在雄安有两亩地'}
+      ]
+    };
+  }
+  // 定义添加comment的函数
+  add = (comment) => {
+    let {comments} = this.state;
+    comments.unshift(comment);
+    this.setState({comments});
+  };
   render(){
+    let {comments} = this.state;
     return (
       <div>
         <header className="site-header jumbotron">
@@ -16,8 +33,8 @@ class App extends Component {
           </div>
         </header>
         <div className="container">
-          <Add />
-          <List />
+          <Add add={this.add}/>
+          <List comments={comments}/>
         </div>
       </div>
     )
