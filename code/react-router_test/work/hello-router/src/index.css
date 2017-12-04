@@ -1,7 +1,5 @@
-.active{
-  color: #ff00ff;
-}
-
-.active2{
-  color: greenyellow;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }

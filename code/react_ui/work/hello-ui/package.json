@@ -1,8 +1,10 @@
 {
-  "name": "react-ui",
+  "name": "hello-ui",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "antd": "^2.13.11",
+    "babel-plugin-import": "^1.6.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-scripts": "1.0.17"
