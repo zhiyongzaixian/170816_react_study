@@ -19,7 +19,19 @@
   <button id="test3">hash test3</button><br><br>
   <button id="test4">hash test4</button><br><br>
   <script type="text/javascript">
+    window.onload  = function () {
+      document.getElementById('test3').onclick = function () {
+        console.log(window.location.hash);
+      }
 
+      document.getElementById('test4').onclick = function () {
+        window.location.hash = '/test4'
+      }
+      
+      window.onhashchange = function () {
+        console.log(window.location.hash);
+      }
+    }
   </script>
 </body>
 </html>
