@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Button, DatePicker } from 'antd';
 
-import 'antd/dist/antd.css';
+// import 'antd/dist/antd.css';
 
 class App extends React.Component {
   render(){
