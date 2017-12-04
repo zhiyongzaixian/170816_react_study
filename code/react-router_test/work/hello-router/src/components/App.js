@@ -7,8 +7,8 @@ class App extends React.Component {
       <div>
         <h2>App组件。。。</h2>
         <ul>
-          <li><Link to="/about">about</Link></li>
-          <li><Link to="/repos">repos</Link></li>
+          <li><Link activeClassName="active" to="/about">about</Link></li>
+          <li><Link activeClassName="active" to="/repos">repos</Link></li>
         </ul>
         {this.props.children}
       </div>
